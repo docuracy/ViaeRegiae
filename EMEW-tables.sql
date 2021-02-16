@@ -84,7 +84,6 @@ CREATE TABLE links (
 CREATE TABLE relations (
     id uuid DEFAULT uuid_generate_v4 (), -- 'relation_id' for internal use
     feature_id uuid,
-    feature_id uuid,
     relation_type VARCHAR,
     relation_to VARCHAR,
     label VARCHAR,
