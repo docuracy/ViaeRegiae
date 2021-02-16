@@ -1,0 +1,19 @@
+-- Database structure based on requirements of Linked Places Format v1.2 [https://github.com/LinkedPasts/linked-places]
+
+CREATE TABLE features (
+    id uuid DEFAULT uuid_generate_v4 (), -- Feature id for public use in API
+);
+
+CREATE TABLE properties (
+    id uuid DEFAULT uuid_generate_v4 (), -- Property id for internal use
+    feature_id uuid,
+    title VARCHAR NOT NULL
+);
+
+CREATE TABLE ccodes (
+    property_id uuid,
+    country char(2) -- https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+);
+
+CREATE TABLE periods (
+);
