@@ -1,4 +1,5 @@
 -- Database structure based on specification of Linked Places Format v1.2 [https://github.com/LinkedPasts/linked-places]
+-- TODO: Make use of jsonb objects where appropriate - see https://twitter.com/WHGazetteer/status/1361726743770370049?s=20
 
 CREATE TABLE features (
     id uuid DEFAULT uuid_generate_v4 () -- 'feature_id' for public use in API, and for internal use
