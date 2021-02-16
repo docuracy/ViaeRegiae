@@ -1,6 +1,7 @@
 <?php 
 
 // Conversion of GB1900_abridged .csv for minimal import to Recogito
+// Source data from https://www.visionofbritain.org.uk/data/#tabgb1900
 // Source contains 1,174,449 records in 1,174,451 rows.
 // Stephen Gadd
 
