@@ -1,11 +1,11 @@
 -- Database structure based on specification of Linked Places Format v1.2 [https://github.com/LinkedPasts/linked-places]
 
 CREATE TABLE features (
-    id uuid DEFAULT uuid_generate_v4 (), -- Feature id for public use in API
+    id uuid DEFAULT uuid_generate_v4 (), -- 'feature_id' for public use in API, and for internal use
 );
 
 CREATE TABLE properties (
-    id uuid DEFAULT uuid_generate_v4 (), -- Property id for internal use
+    id uuid DEFAULT uuid_generate_v4 (), -- 'property_id' for internal use
     feature_id uuid,
     title VARCHAR NOT NULL
 );
@@ -13,6 +13,43 @@ CREATE TABLE properties (
 CREATE TABLE ccodes (
     property_id uuid,
     country char(2) -- ISO 3166-1 alpha-2 [https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2]
+);
+
+CREATE TABLE whens (
+    id uuid DEFAULT uuid_generate_v4 (), -- 'when_id' for internal use
+    parent_id uuid,
+    label VARCHAR,
+    duraction VARCHAR
+);
+
+CREATE TABLE timespans (
+    id uuid DEFAULT uuid_generate_v4 (), -- 'timespan_id' for internal use
+    when_id uuid
+);
+
+CREATE TABLE starts_ends (
+    timespan_id uuid,
+    is_end boolean,
+    iel char(1) -- "in," "earliest," or "latest"
+    owl VARCHAR -- ISO 8601 expression as described by the OWL-Time ontology [https://www.w3.org/TR/owl-time/]
+);
 
 CREATE TABLE periods (
+    when_id uuid,
+    name VARCHAR,
+    uri VARCHAR
 );
+
+CREATE TABLE toponyms (
+    id uuid DEFAULT uuid_generate_v4 (), -- 'toponym_id' for internal use
+    feature_id uuid,
+    toponym VARCHAR,
+    lang char(2)
+);
+
+CREATE TABLE citations (
+    toponym_id uuid,
+    label VARCHAR,
+    citation_id VARCHAR
+);
+
