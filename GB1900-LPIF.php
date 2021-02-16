@@ -1,7 +1,6 @@
 <?php 
 
 // Conversion of GB1900_abridged .csv for minimal import to Recogito
-// Source data from https://www.visionofbritain.org.uk/data/#tabgb1900
 // Source contains 1,174,449 records in 1,174,451 rows.
 // Stephen Gadd
 
@@ -20,6 +19,8 @@ function isJson($string) {
 $chunk_size = 70000; // Recogito crashes with overlarge imports
 $row = -2;
 $records = 0;
+$invalid_coordinates = 0;
+$invalid_json = 0;
 $lpif = "./data/gb1900_abridged_%%%.lpf.json"; // Must have 'lpf' somewhere in the filename and .json file extension for successful import to Recogito
 if (($handle = fopen("./data/gb1900_abridged.csv", "r")) !== FALSE) {
     while (($data = fgetcsv($handle)) !== FALSE) {
@@ -33,10 +34,17 @@ if (($handle = fopen("./data/gb1900_abridged.csv", "r")) !== FALSE) {
         }
         if (count($data)>1) {
             $json = array();
+            $lng = clean($data[8]);
+            $lat = clean($data[7]);
+            if(abs($lat)>90 || abs($lng)>180){
+                echo "Invalid Latitude/Longitude at row ".$row.": ".$lat." | ".$lng."<br/>";
+                $invalid_coordinates++;
+                continue;
+            }
             $json[] = '"@id":"https://www.pastplace.org/gb1900/'.clean($data[0]).'"';
             $json[] = '"properties":{ "title":"'.clean($data[1]).'"}';
             $json[] = '"namings":[{"toponym":"'.clean($data[1]).','.clean($data[4]).','.clean($data[2]).'"}]';
-            $json[] = '"geometry":{ "type":"Point","coordinates":['.clean($data[8]).','.clean($data[7]).']}';
+            $json[] = '"geometry":{ "type":"Point","coordinates":['.$lng.','.$lat.']}';
             $json = "{".implode(",",$json)."}";
             if(isJson($json)){
                 file_put_contents($chunkfile, ($row % $chunk_size == 0 ? '' : ',').$json, FILE_APPEND);
@@ -44,10 +52,13 @@ if (($handle = fopen("./data/gb1900_abridged.csv", "r")) !== FALSE) {
             }
             else{
                 echo "Invalid JSON at row ".$row.": ".$json."<br/>";
+                $invalid_json++;
             }
         }
     }
     echo $records." records extracted from ".$row." rows.<br/>";
+    echo "Invalid coordinates extracted from ".$invalid_coordinates." rejected rows.<br/>";
+    echo "Invalid JSON generated from ".$invalid_json." rejected rows.<br/>";
     fclose($handle);
     for($chunk=0; $chunk<=intdiv($row, $chunk_size); $chunk++){
         $chunkfile = str_replace("%%%",str_pad($chunk,3,"0",STR_PAD_LEFT),$lpif);
