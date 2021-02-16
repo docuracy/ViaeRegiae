@@ -22,8 +22,8 @@ $records = 0;
 $invalid_coordinates = 0;
 $invalid_json = 0;
 $lpif = "./data/gb1900_abridged_%%%.lpf.json"; // Must have 'lpf' somewhere in the filename and .json file extension for successful import to Recogito
-if (($handle = fopen("./data/gb1900_abridged.csv", "r")) !== FALSE) {
-    while (($data = fgetcsv($handle)) !== FALSE) {
+if (($handle = fopen("./data/gb1900_abridged.csv", "r")) !== FALSE) { 
+    while (($data = fgetcsv($handle)) !== FALSE) { // Some of the failed record imports are probably due to incorrect parsing of the csv by this function (or malformed csv)
         $row++;
         if($row==-1) {
             continue; // Drop header: pin_id,final_text,nation,local_authority,parish,osgb_east,osgb_north,latitude,longitude,notes
