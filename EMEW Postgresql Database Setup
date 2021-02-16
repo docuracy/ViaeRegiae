@@ -1,4 +1,4 @@
--- Database structure based on requirements of Linked Places Format v1.2 [https://github.com/LinkedPasts/linked-places]
+-- Database structure based on specification of Linked Places Format v1.2 [https://github.com/LinkedPasts/linked-places]
 
 CREATE TABLE features (
     id uuid DEFAULT uuid_generate_v4 (), -- Feature id for public use in API
@@ -12,8 +12,7 @@ CREATE TABLE properties (
 
 CREATE TABLE ccodes (
     property_id uuid,
-    country char(2) -- https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
-);
+    country char(2) -- ISO 3166-1 alpha-2 [https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2]
 
 CREATE TABLE periods (
 );
