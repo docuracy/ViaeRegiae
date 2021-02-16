@@ -17,7 +17,7 @@ CREATE TABLE ccodes (
 
 CREATE TABLE whens (
     id uuid DEFAULT uuid_generate_v4 (), -- 'when_id' for internal use
-    parent_id uuid,
+    parent_id uuid, -- used for features, types, geometries, relations
     label VARCHAR,
     duraction VARCHAR
 );
@@ -47,8 +47,8 @@ CREATE TABLE toponyms (
     lang char(2)
 );
 
-CREATE TABLE citations (
-    toponym_id uuid,
+CREATE TABLE citations ( 
+    parent_id uuid, -- used for toponyms, relations
     label VARCHAR,
     citation_id VARCHAR
 );
@@ -79,4 +79,28 @@ CREATE TABLE links (
     feature_id uuid,
     type VARCHAR,
     identifier VARCHAR
+);
+
+CREATE TABLE relations (
+    id uuid DEFAULT uuid_generate_v4 (), -- 'relation_id' for internal use
+    feature_id uuid,
+    feature_id uuid,
+    relation_type VARCHAR,
+    relation_to VARCHAR,
+    label VARCHAR,
+    certainty VARCHAR -- Values for the optional certainty attribute can be one of "certain", "less-certain" and "uncertain".
+);
+
+CREATE TABLE descriptions (
+    feature_id uuid,
+    value VARCHAR,
+    lang char(2),
+    source VARCHAR
+);
+
+CREATE TABLE depictions (
+    feature_id uuid,
+    id VARCHAR,
+    title VARCHAR,
+    license VARCHAR
 );
