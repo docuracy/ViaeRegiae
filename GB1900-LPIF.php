@@ -30,7 +30,7 @@ if (($handle = fopen("./data/gb1900_abridged.csv", "r")) !== FALSE) {
             $chunkfile = str_replace("%%%",str_pad(intdiv($row, $chunk_size),3,"0",STR_PAD_LEFT),$lpif);
             file_put_contents($chunkfile, '{"type":"FeatureCollection","features":['); // Opening of GeoJSON-LD wrapper
         }
-        elseif (count($data)>1) {
+        if (count($data)>1) {
             $json = array();
             $json[] = '"@id":"https://www.pastplace.org/gb1900/'.clean($data[0]).'"';
             $json[] = '"properties":{ "title":"'.clean($data[1]).'"}';
@@ -38,7 +38,7 @@ if (($handle = fopen("./data/gb1900_abridged.csv", "r")) !== FALSE) {
             $json[] = '"geometry":{ "type":"Point","coordinates":['.clean($data[8]).','.clean($data[7]).']}';
             $json = "{".implode(",",$json)."}";
             if(isJson($json)){
-                file_put_contents($chunkfile, ($row>2 ? ',' : '').$json, FILE_APPEND);
+                file_put_contents($chunkfile, ($row % $chunk_size == 0 ? '' : ',').$json, FILE_APPEND);
                 $records++;
             }
             else{
