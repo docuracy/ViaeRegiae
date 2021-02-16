@@ -1,7 +1,7 @@
 -- Database structure based on specification of Linked Places Format v1.2 [https://github.com/LinkedPasts/linked-places]
 
 CREATE TABLE features (
-    id uuid DEFAULT uuid_generate_v4 (), -- 'feature_id' for public use in API, and for internal use
+    id uuid DEFAULT uuid_generate_v4 () -- 'feature_id' for public use in API, and for internal use
 );
 
 CREATE TABLE properties (
@@ -30,7 +30,7 @@ CREATE TABLE timespans (
 CREATE TABLE starts_ends (
     timespan_id uuid,
     is_end boolean,
-    iel char(1) -- "in," "earliest," or "latest"
+    iel char(1), -- "in," "earliest," or "latest"
     owl VARCHAR -- ISO 8601 expression as described by the OWL-Time ontology [https://www.w3.org/TR/owl-time/]
 );
 
