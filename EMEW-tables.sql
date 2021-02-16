@@ -65,3 +65,18 @@ CREATE TABLE source_labels (
     label VARCHAR,
     lang char(2)
 );
+
+CREATE TABLE geometries (
+    id uuid DEFAULT uuid_generate_v4 (), -- 'geometry_id' for internal use
+    feature_id uuid,
+    node point, -- only one of point|edge|area to be set per geometry
+    edge lseg,
+    area polygon,
+    certainty VARCHAR -- Values for the optional certainty attribute can be one of "certain", "less-certain" and "uncertain".
+);
+
+CREATE TABLE links (
+    feature_id uuid,
+    type VARCHAR,
+    identifier VARCHAR
+);
