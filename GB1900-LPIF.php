@@ -16,7 +16,7 @@ function isJson($string) {
     return (json_last_error() == JSON_ERROR_NONE);
 }
 
-$chunk_size = 70000; // Recogito crashes with overlarge imports
+$chunk_size = 70000; // Indexing causes crashes with overlarge imports (dependent on individual server resources)
 $row = -2;
 $records = 0;
 $invalid_coordinates = 0;
