@@ -53,3 +53,16 @@ CREATE TABLE citations (
     citation_id VARCHAR
 );
 
+CREATE TABLE types (
+    id uuid DEFAULT uuid_generate_v4 (), -- 'type_id' for internal use
+    feature_id uuid,
+    identifier VARCHAR,
+    label VARCHAR
+);
+
+CREATE TABLE source_labels (
+    type_id uuid,
+    label VARCHAR,
+    lang char(2)
+);
+
