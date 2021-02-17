@@ -1,70 +1,34 @@
 -- Database structure based on specification of Linked Places Format v1.2 [https://github.com/LinkedPasts/linked-places]
--- TODO: Make use of jsonb objects where appropriate - see https://twitter.com/WHGazetteer/status/1361726743770370049?s=20
 
 CREATE TABLE features (
-    id uuid DEFAULT uuid_generate_v4 () -- 'feature_id' for public use in API, and for internal use
+    id uuid DEFAULT uuid_generate_v4 (), -- 'feature_id' for public use in API, and for internal use
+    title VARCHAR NOT NULL -- feature->properties->title
 );
 
-CREATE TABLE properties (
-    id uuid DEFAULT uuid_generate_v4 (), -- 'property_id' for internal use
-    feature_id uuid,
-    title VARCHAR NOT NULL
-);
-
-CREATE TABLE ccodes (
-    property_id uuid,
+CREATE TABLE ccodes ( -- feature->properties->ccodes
+    feature_id uuid UNIQUE,
     country char(2) -- ISO 3166-1 alpha-2 [https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2]
 );
 
-CREATE TABLE whens (
+CREATE TABLE whens ( -- used for features, types, geometries, relations
     id uuid DEFAULT uuid_generate_v4 (), -- 'when_id' for internal use
-    parent_id uuid, -- used for features, types, geometries, relations
+    parent_id uuid,
+    timespans jsonb,
+    periods jsonb,
     label VARCHAR,
-    duraction VARCHAR
+    duration VARCHAR
 );
 
-CREATE TABLE timespans (
-    id uuid DEFAULT uuid_generate_v4 (), -- 'timespan_id' for internal use
-    when_id uuid
-);
-
-CREATE TABLE starts_ends (
-    timespan_id uuid,
-    is_end boolean,
-    iel char(1), -- "in," "earliest," or "latest"
-    owl VARCHAR -- ISO 8601 expression as described by the OWL-Time ontology [https://www.w3.org/TR/owl-time/]
-);
-
-CREATE TABLE periods (
-    when_id uuid,
-    name VARCHAR,
-    uri VARCHAR
-);
-
-CREATE TABLE toponyms (
-    id uuid DEFAULT uuid_generate_v4 (), -- 'toponym_id' for internal use
+CREATE TABLE names (
+    id uuid DEFAULT uuid_generate_v4 (), -- 'name_id' for internal use
     feature_id uuid,
-    toponym VARCHAR,
-    lang char(2)
-);
-
-CREATE TABLE citations ( 
-    parent_id uuid, -- used for toponyms, relations
-    label VARCHAR,
-    citation_id VARCHAR
+    name jsonb
 );
 
 CREATE TABLE types (
     id uuid DEFAULT uuid_generate_v4 (), -- 'type_id' for internal use
     feature_id uuid,
-    identifier VARCHAR,
-    label VARCHAR
-);
-
-CREATE TABLE source_labels (
-    type_id uuid,
-    label VARCHAR,
-    lang char(2)
+    type jsonb
 );
 
 CREATE TABLE geometries (
@@ -77,30 +41,25 @@ CREATE TABLE geometries (
 );
 
 CREATE TABLE links (
+    id uuid DEFAULT uuid_generate_v4 (), -- 'link_id' for internal use
     feature_id uuid,
-    type VARCHAR,
-    identifier VARCHAR
+    link jsonb
 );
 
 CREATE TABLE relations (
     id uuid DEFAULT uuid_generate_v4 (), -- 'relation_id' for internal use
     feature_id uuid,
-    relation_type VARCHAR,
-    relation_to VARCHAR,
-    label VARCHAR,
-    certainty VARCHAR -- Values for the optional certainty attribute can be one of "certain", "less-certain" and "uncertain".
+    relation jsonb
 );
 
 CREATE TABLE descriptions (
+    id uuid DEFAULT uuid_generate_v4 (), -- 'description_id' for internal use
     feature_id uuid,
-    value VARCHAR,
-    lang char(2),
-    source VARCHAR
+    description jsonb
 );
 
 CREATE TABLE depictions (
+    id uuid DEFAULT uuid_generate_v4 (), -- 'depiction_id' for internal use
     feature_id uuid,
-    id VARCHAR,
-    title VARCHAR,
-    license VARCHAR
+    depiction jsonb
 );
