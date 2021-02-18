@@ -6,15 +6,15 @@
 ini_set('display_errors', 1);
 error_reporting(-1);
 
-$input_file = "WD_populated_places_combi.tsv";
-$header_row = false;
-$index_id = 0;
+$input_file = "example.csv";
+$header_row = true;
+$index_id = 2;
 $index_id_url = ""; // e.g. "https://www.pastplace.org/gb1900/'
-$index_title = 1;
-$index_county = 2;
-$index_country = 3;
-$index_geometry = 4; // Point or Latitude
-$index_geometry_latlng = false; // false or Longitude
+$index_title = 2;
+$index_county = 3;
+$index_country = false;
+$index_geometry = 0; // Point or Latitude
+$index_geometry_latlng = 1; // false or Longitude
 $disallowed_countries = array("Scotland","Northern Ireland");
 $testmode = false;
 
@@ -59,9 +59,11 @@ if (($handle = fopen("./data/".$input_file, "r")) !== FALSE) {
             file_put_contents($chunkfile, '{"type":"FeatureCollection","features":['); // Opening of GeoJSON-LD wrapper
         }
         if (count($data)>1) {
-            $country = clean($data[$index_country]);
-            if(in_array($country, $disallowed_countries)){
-                continue;
+            if($index_country){
+                $country = clean($data[$index_country]);
+                if(in_array($country, $disallowed_countries)){
+                    continue;
+                }
             }
             $title = clean($data[$index_title]);
             if($title==""){
@@ -85,9 +87,9 @@ if (($handle = fopen("./data/".$input_file, "r")) !== FALSE) {
                 continue;
             }
             $json = array();
-            $json[] = '"@id":"'.$index_id_url.clean($data[$index_id]).'"';
+            $json[] = '"@id":"'.$index_id_url.urlencode(clean($data[$index_id])).'"';
             $json[] = '"properties":{ "title":"'.$title.'"}';
-            $json[] = '"namings":[{"toponym":"'.$title.','.clean($data[$index_county]).'"}]';
+            $json[] = '"namings":[{"toponym":"'.$title.', '.clean($data[$index_county]).'"}]';
             $json[] = '"geometry":{ "type":"Point","coordinates":['.$lng.','.$lat.']}';
             $json = "{".implode(",",$json)."}";
             if(isJson($json)){
