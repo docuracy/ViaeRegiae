@@ -1,7 +1,7 @@
 -- Database structure based on specification of Linked Places Format v1.2 [https://github.com/LinkedPasts/linked-places]
 
 CREATE TABLE features (
-    id uuid DEFAULT uuid_generate_v4 (), -- 'feature_id' for public use in API, and for internal use
+    id uuid DEFAULT uuid_generate_v4 (), -- 'feature_id' for internal use, and prepended with "EMEW-" for public use in API 
     title VARCHAR NOT NULL -- feature->properties->title
 );
 
