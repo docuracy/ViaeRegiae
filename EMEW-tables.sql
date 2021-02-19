@@ -34,6 +34,7 @@ CREATE TABLE types (
 CREATE TABLE geometries (
     id uuid DEFAULT uuid_generate_v4 (), -- 'geometry_id' for internal use
     feature_id uuid,
+    private boolean,
     node point, -- only one of point|edge|area to be set per geometry
     edge lseg,
     area polygon,
