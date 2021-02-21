@@ -2,6 +2,8 @@
 
 CREATE TABLE features (
     id uuid DEFAULT uuid_generate_v4 (), -- 'feature_id' for internal use, and prepended with "EMEW-" for public use in API 
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     title VARCHAR NOT NULL -- feature->properties->title
 );
 
@@ -64,3 +66,9 @@ CREATE TABLE depictions (
     feature_id uuid,
     depiction jsonb
 );
+
+CREATE TABLE licences { -- To record restrictions on the use and publication of reference datasets
+	parent_id uuid, 
+    display_text VARCHAR, 
+    licence VARCHAR
+} 
