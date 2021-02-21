@@ -70,5 +70,5 @@ CREATE TABLE depictions (
 CREATE TABLE licences { -- To record restrictions on the use and publication of reference datasets
 	parent_id uuid, 
     display_text VARCHAR, 
-    licence VARCHAR
+    licence VARCHAR -- Wikidata Q-number? 
 } 
