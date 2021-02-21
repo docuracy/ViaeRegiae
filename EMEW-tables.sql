@@ -75,6 +75,5 @@ CREATE TABLE licences { -- To record restrictions on the use and publication of 
 
 CREATE TABLE downloads { -- To track popularity of different datasets, disambiguated by user
     user_IP cidr,
-    user_MAC macaddr,
     data jsonb
 }
