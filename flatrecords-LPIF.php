@@ -6,15 +6,18 @@
 ini_set('display_errors', 1);
 error_reporting(-1);
 
-$input_file = "example.csv";
+$input_file = "hillforts.tsv";
 $header_row = true;
-$index_id = 2;
-$index_id_url = ""; // e.g. "https://www.pastplace.org/gb1900/'
+$index_id = 0;
+$index_id_url = ""; // Used to create dummy where no published url exists, e.g. "https://emew.io/unpublished/tudor_bridges/'
 $index_title = 2;
-$index_county = 3;
-$index_country = false;
-$index_geometry = 0; // Point or Latitude
-$index_geometry_latlng = 1; // false or Longitude
+$index_alias = false; // Used to create additional toponyms, for example where a column contains a name in a different language
+$title_substitute = ""; // Used when features have no names
+$title_prefix = "HILLFORT: "; // Used to aid disambiguation of feature classification, e.g. "CONFLUENCE: "
+$index_county = 3; // May be false
+$index_country = false; // May be false
+$index_geometry = 4; // Point or Latitude
+$index_geometry_latlng = false; // false or Longitude
 $disallowed_countries = array("Scotland","Northern Ireland");
 $testmode = false;
 
@@ -65,13 +68,17 @@ if (($handle = fopen("./data/".$input_file, "r")) !== FALSE) {
                     continue;
                 }
             }
-            $title = clean($data[$index_title]);
+            $title = $index_title ? clean($data[$index_title]) : $title_substitute;
             if($title==""){
                 echo "Empty Title extracted at row ".$row.": ".$data."<br/>";
                 $empty_titles++;
                 continue;
             }
-            if($index_geometry_latlng){
+            if($index_alias && $data[$index_alias]!==""){
+                $alias = ',{"toponym":"'.$data[$index_alias].($index_county==false?'':', '.clean($data[$index_county])).'"}';
+            }
+            else $alias = "";
+            if($index_geometry_latlng!==false){
                 $lng = clean($data[$index_geometry_latlng]);
                 $lat = clean($data[$index_geometry]);
             }
@@ -87,9 +94,9 @@ if (($handle = fopen("./data/".$input_file, "r")) !== FALSE) {
                 continue;
             }
             $json = array();
-            $json[] = '"@id":"'.$index_id_url.urlencode(clean($data[$index_id])).'"';
-            $json[] = '"properties":{ "title":"'.$title.'"}';
-            $json[] = '"namings":[{"toponym":"'.$title.', '.clean($data[$index_county]).'"}]';
+            $json[] = '"@id":"'.($index_id_url =="" ? clean($data[$index_id]) : $index_id_url.urlencode(clean($data[$index_id]))).'"';
+            $json[] = '"properties":{ "title":"'.$title_prefix.$title.'"}';
+            $json[] = '"namings":[{"toponym":"'.$title.($index_county==false?'':', '.clean($data[$index_county])).'"}'.$alias.']';
             $json[] = '"geometry":{ "type":"Point","coordinates":['.$lng.','.$lat.']}';
             $json = "{".implode(",",$json)."}";
             if(isJson($json)){
