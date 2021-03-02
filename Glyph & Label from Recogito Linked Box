@@ -31,7 +31,7 @@ function glyph(){
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
     $data = curl_exec($curl);
     curl_close($curl);
-    return "<img ".$style."alt='tagged glyph' src='data:image/png;base64,".base64_encode($data)."' />";
+    return "<img ".$style."alt='tagged glyph' class='lbox_glyph' src='data:image/png;base64,".base64_encode($data)."' />";
 }
 
 function tag(){
@@ -72,7 +72,7 @@ function tag(){
     $image = new Imagick();
     if ($image->readImageBlob($data)){
         $image->cropImage($lbox["l"]-2, $lbox["h"]-2, intval(($rot_width-$lbox["l"])/2), intval(($rot_height-$lbox["h"])/2));
-        return "<img ".$style."alt='tagged label' src='data:image/png;base64,".base64_encode($image)."' />";
+        return "<img ".$style."alt='tagged label' class='lbox_label' src='data:image/png;base64,".base64_encode($image)."' />";
     }
     else{
         return "Failed to read tag image.";
