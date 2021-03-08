@@ -1,5 +1,6 @@
 watermill, https://www.wikidata.org/wiki/Q185187
 hamlet, https://www.wikidata.org/wiki/Q5084
+hamlet-double, https://www.wikidata.org/wiki/Q5084
 village-spire, https://www.wikidata.org/wiki/Q532
 village-spike, https://www.wikidata.org/wiki/Q532
 village-large, https://www.wikidata.org/wiki/Q26714626
