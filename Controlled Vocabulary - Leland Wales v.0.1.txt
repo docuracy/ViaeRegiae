@@ -1,1 +1,2 @@
-Start
+admin-borough, https://www.wikidata.org/wiki/Q5195043
+admin-cantref, https://www.wikidata.org/wiki/Q1033904
