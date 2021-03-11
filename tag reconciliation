@@ -150,8 +150,8 @@ glyph-uncertain
 
 Uncontrolled:
 document_id, ktuqy6hknw25yb
-Glyph uncertain.,
-r
+Glyph uncertain., glyph-uncertain
+r, DELETE
 
 ==================================================
 
@@ -200,7 +200,7 @@ Uncontrolled:
 document_id, ufs69mbdqwfbkh
 hall,
 Hall,
-River
+River, river
 
 ==================================================
 
