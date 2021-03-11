@@ -214,8 +214,8 @@ defence-citywalls
 
 Uncontrolled:
 document_id, sui5bsdm8zb8he
-,
-Abbey,
+, DELETE
+Abbey, religion-abbey
 Boundary,
 Bridge,
 Cantref,
