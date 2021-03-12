@@ -17,27 +17,7 @@
 ini_set('display_errors', 1);
 error_reporting(-1);
 
-// JSON ELASTICSEARCH TEMPLATES
-// Geosearch on gazetteers
-$json_point = '{
-    "from" : 0, 
-    "size" : 500,
-    "query": {
-        "bool": {
-            "must": {
-                "match": { "_type":   "entity" }
-            },
-            "filter": {
-                "geo_distance": {
-                    "distance": "10km",
-                    "representative_point": %%%%
-                }
-            }
-        }
-    }
-}';
-
-// All annotations for specific document
+// Template to return all annotations for a specific document
 $json_all_annotations = '{
     "from" : 0,
     "size" : 5000,
@@ -50,73 +30,7 @@ $json_all_annotations = '{
     }
 }';
 
-// Annotation hits
-// "match": { "_source.bodies.reference.uri":   "%%%%" }
-$json_annotation = '{
-    "from" : 0,
-    "size" : 500,
-    "query": {
-        "bool": {
-            "must": {
-                "match": { "_type":   "annotation" }
-            },
-            "must": {
-                "match": { "_all":   "%%%%" }
-            }
-        }
-    }
-}';
-
-// Gazetteers matching union_id
-$json_union_id = '{
-    "from" : 0,
-    "size" : 50,
-    "query": {
-        "bool": {
-            "must": {
-                "match": { "_type":   "entity" }
-            },
-            "must": {
-                "match": { "_id":   "%%%%" }
-            }
-        }
-    }
-}';
-
-// Gazetters matching uri
-$json_uri = '{
-    "from" : 0,
-    "size" : 1,
-    "query": {
-        "bool": {
-            "must": {
-                "match": { "_type":   "entity" }
-            },
-            "must": {
-                "match": { "_all":   "%%%%" }
-            }
-        }
-    }
-}';
-
-// Update Annotations matching uri
-$json_update = '{
-    "from" : 0,
-    "size" : 1,
-    "query": {
-        "bool": {
-            "must": {
-                "match": { "_type":   "annotation" }
-            },
-            "must": {
-                "match": { "_all":   "%%%%" }
-            }
-        }
-    }
-}';
-
 // Fetch corrections list
-
 if (($handle = fopen("https://raw.githubusercontent.com/docuracy/ViaeRegiae/main/controlled%20vocabularies/tag%20reconciliation", "r")) !== FALSE) { // *Replace with the url of the file generated in STEP 1
     $skip = true;
     $document_id = "";
