@@ -1,6 +1,18 @@
 <?php 
 
-// This utility is used to reconcile annotation tags against controlled vocabularies and a corrections list
+// This utility is used to reconcile annotation tags against controlled vocabularies and a corrections list.
+// STEP 1: Run this script to generate a specially-formatted list of Recogito documents bearing uncontrolled tags.
+// STEP 2: Paste the output into a readable file (e.g. the raw version of a file saved to Github).
+// STEP 3: Edit the readable file, adding replacement tags (from your loaded controlled vocabulary) after uncontrolled ones, for example:
+//          vllage, village
+//          small town, village
+//          unknown,
+//          butterfingers, DELETE
+// - adding nothing after the comma will leave the tag unchanged.
+// - adding the word 'DELETE' will delete the offending tag from the annotation.
+// STEP 4: Run the script again: replacements and deletions will be made, and a new list generated.
+//
+// Stephen Gadd, Docuracy Ltd
 
 ini_set('display_errors', 1);
 error_reporting(-1);
@@ -105,7 +117,7 @@ $json_update = '{
 
 // Fetch corrections list
 
-if (($handle = fopen("https://raw.githubusercontent.com/docuracy/ViaeRegiae/main/controlled%20vocabularies/tag%20reconciliation", "r")) !== FALSE) {
+if (($handle = fopen("https://raw.githubusercontent.com/docuracy/ViaeRegiae/main/controlled%20vocabularies/tag%20reconciliation", "r")) !== FALSE) { // *Replace with the url of the file generated in STEP 1
     $skip = true;
     $document_id = "";
     $corrections = array();
@@ -133,7 +145,6 @@ if (($handle = fopen("https://raw.githubusercontent.com/docuracy/ViaeRegiae/main
     }
     fclose($handle);
 }
-else exit ('Failed to open reconciliation file.');
 
 // Initialise cURL
 $ch = curl_init();
