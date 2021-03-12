@@ -77,7 +77,7 @@ function updatePoints(event){
 		jQuery.getJSON("./near_points.json.php?point="+mymap.getCenter().lat+","+mymap.getCenter().lng, function (data) {
 			points = new L.GeoJSON(data,{
                 onEachFeature: function (f, l) {
-                	l.bindPopup('<h2>'+f.properties.gazette[1]+'</h2><pre>'+f.properties.gazette[0]+'</pre><button class="btn" data-clipboard-text="'+f.properties.gazette[0]+'">Copy to clipboard</button>');
+                	l.bindPopup('<h2>'+f.properties.gazette[1]+'</h2><pre>['+f.properties.gazette[0]+']</pre><button class="btn" data-clipboard-text="['+f.properties.gazette[0]+']">Copy to clipboard</button>');
                 }
 			}).addTo(mymap);
 		});
