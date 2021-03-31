@@ -58,7 +58,7 @@ industry-processing-watermill
 industry-processing-windmill
 industry-quarry-slate
 industry-quarry-stone
-infrasturcture-bridge
+infrastructure-bridge
 infrastructure-ditch-drainage
 infrastructure-ferry
 infrastructure-ford
@@ -69,7 +69,7 @@ landscape-bog
 landscape-estuary
 landscape-hill
 landscape-island
-landscale-lake
+landscape-lake
 landscape-marsh
 landscape-mountain
 landscape-river
@@ -107,6 +107,6 @@ settlement-village
 shoreline-cliffs
 shoreline-headland
 shoreline-pebbles
-shorline-rocks
+shoreline-rocks
 shoreline-sand
 unclassified
