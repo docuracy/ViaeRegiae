@@ -9,6 +9,9 @@ admin-lordship
 admin-parish-historical
 admin-shire
 admin-wapentake
+animals-wild-deer
+animals-wild-fish
+animals-wild-goats
 commerce-fair
 commerce-market
 defence-beacon
@@ -33,6 +36,10 @@ farming-crops-oats
 farming-crops-peas
 farming-crops-rye
 farming-crops-wheat
+fishing-eels
+fishing-trout
+fishing-trout-red
+fishing-trout-white
 hunting-chase
 hunting-forest
 hunting-park-deer
@@ -62,7 +69,10 @@ infrastructure-bridge
 infrastructure-ditch-drainage
 infrastructure-ferry
 infrastructure-ford
+infrastructure-haven
 infrastructure-highway
+infrastructure-mountainpass
+infrastructure-prison
 infrastructure-well
 infrastructure-wharf
 landscape-bog
@@ -77,6 +87,7 @@ landscape-river-creek
 landscape-river-mouth
 landscape-river-brook
 landscape-river-rill
+landscape-sea-strait
 landscape-soil
 landscape-valley
 landscape-wood-coppicing
