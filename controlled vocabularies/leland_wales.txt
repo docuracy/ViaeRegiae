@@ -94,6 +94,7 @@ landscape-wood-coppicing
 landscape-wood-oak
 landscape-wood-pollarding
 landscape-wood-unclassified
+linesplit
 religion-abbey
 religion-cathedral
 religion-chapel
@@ -115,6 +116,8 @@ settlement-port
 settlement-suburb
 settlement-town
 settlement-village
+shoreline-bay
+shoreline-beach
 shoreline-cliffs
 shoreline-headland
 shoreline-pebbles
