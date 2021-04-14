@@ -1,3 +1,100 @@
+Saxton: Dorset
+
+Controlled:
+watermill,
+hamlet,
+hamlet-double,
+village-spire,
+village-spike,
+village-large,
+manor-buildings,
+manor-box,
+tower,
+castle,
+town,
+cathedral,
+beacon,
+windmill,
+hill,
+mountain,
+headland,
+bridge,
+ford,
+river,
+lake,
+marsh,
+island,
+wood,
+forest,
+chase,
+park-trees,
+park-bare,
+battlefield,
+burghley,
+marginalia,
+sea-creature,
+ship,
+county,
+county-detached,
+hundred,
+glyph-uncertain
+
+Rogue:
+document_id, bwgsrmi2tozrsn
+circle,
+tree
+
+==================================================
+
+George Owen, Pembrokeshire, 1602
+
+Controlled:
+watermill,
+hamlet,
+hamlet-double,
+village-spire,
+village-spike,
+village-large,
+manor-buildings,
+manor-box,
+tower,
+castle,
+town,
+cathedral,
+beacon,
+windmill,
+hill,
+mountain,
+headland,
+bridge,
+ford,
+river,
+lake,
+marsh,
+island,
+wood,
+forest,
+chase,
+park-trees,
+park-bare,
+battlefield,
+burghley,
+marginalia,
+sea-creature,
+ship,
+county,
+county-detached,
+hundred,
+glyph-uncertain
+
+Rogue:
+document_id, tfnypwgyvh5rk0
+ferry,
+ff,
+unclear
+
+==================================================
+
 Saxton: Lincolnshire, Nottinghamshire
 
 Controlled:
@@ -38,10 +135,64 @@ county-detached,
 hundred,
 glyph-uncertain
 
-Uncontrolled:
+Rogue:
 document_id, abtemqrd29xpjt
+abbey,
+circle,
+ferry,
+glyph-circle,
+glyph-none,
+landing place,
 park,
-village
+village,
+village-castellated
+
+==================================================
+
+Saxton: Kent, Sussex, Surrey, Middlesex
+
+Controlled:
+watermill,
+hamlet,
+village-spire,
+village-spike,
+village-large,
+manor-buildings,
+manor-box,
+tower,
+castle,
+town,
+cathedral,
+beacon,
+windmill,
+hill,
+mountain,
+headland,
+bridge,
+ford,
+river,
+lake,
+marsh,
+island,
+wood,
+forest,
+chase,
+park-trees,
+park-bare,
+battlefield,
+burghley,
+marginalia,
+sea-creature,
+ship,
+county,
+county-detached,
+hundred,
+glyph-uncertain
+
+Rogue:
+document_id, ig8ecr5tex8nqv
+glyph-circle,
+unknown
 
 ==================================================
 
@@ -85,9 +236,8 @@ county-detached,
 hundred,
 glyph-uncertain
 
-Uncontrolled:
+Rogue:
 document_id, rxxvqbgjjsussd
-boat,
 chapel,
 circle,
 city,
@@ -108,7 +258,146 @@ unlabelled
 
 ==================================================
 
-Saxton: Yorkshire
+Saxton: Gloucestershire
+
+Controlled:
+watermill,
+hamlet,
+village-spire,
+village-spike,
+village-large,
+manor-buildings,
+manor-box,
+tower,
+castle,
+town,
+cathedral,
+beacon,
+windmill,
+hill,
+mountain,
+headland,
+bridge,
+ford,
+river,
+lake,
+marsh,
+island,
+wood,
+forest,
+chase,
+park-trees,
+park-bare,
+battlefield,
+burghley,
+marginalia,
+sea-creature,
+ship,
+county,
+county-detached,
+hundred,
+glyph-uncertain
+
+Rogue:
+document_id, ktuqy6hknw25yb
+ferry
+
+==================================================
+
+Saxton: Westmorland, Cumberland
+
+Controlled:
+watermill,
+hamlet,
+village-spire,
+village-spike,
+village-large,
+manor-buildings,
+manor-box,
+tower,
+castle,
+town,
+cathedral,
+beacon,
+windmill,
+hill,
+mountain,
+headland,
+bridge,
+ford,
+river,
+lake,
+marsh,
+island,
+wood,
+forest,
+chase,
+park-trees,
+park-bare,
+battlefield,
+burghley,
+marginalia,
+sea-creature,
+ship,
+county,
+county-detached,
+hundred,
+glyph-uncertain
+
+Rogue:
+document_id, y6tjzllohyamr0
+c,
+v
+
+==================================================
+
+Saxton: Oxfordshire, Buckinghamshire, Berkshire
+
+Controlled:
+watermill,
+hamlet,
+village-spire,
+village-spike,
+village-large,
+manor-buildings,
+manor-box,
+tower,
+castle,
+town,
+cathedral,
+beacon,
+windmill,
+hill,
+mountain,
+headland,
+bridge,
+ford,
+river,
+lake,
+marsh,
+island,
+wood,
+forest,
+chase,
+park-trees,
+park-bare,
+battlefield,
+burghley,
+marginalia,
+sea-creature,
+ship,
+county,
+county-detached,
+hundred,
+glyph-uncertain
+
+Rogue:
+document_id, 2smumwdrrqzwev
+confluence
+
+==================================================
+
+Saxton: Wiltshire
 
 Controlled:
 watermill,
@@ -149,10 +438,59 @@ county-detached,
 hundred,
 glyph-uncertain
 
-Uncontrolled:
-document_id, ufs69mbdqwfbkh
-Hall,
-hall
+Rogue:
+document_id, cwdvby6py0ezxg
+confluence,
+h,
+v
+
+==================================================
+
+Saxton: Devon
+
+Controlled:
+watermill,
+hamlet,
+hamlet-double,
+village-spire,
+village-spike,
+village-large,
+manor-buildings,
+manor-box,
+tower,
+castle,
+town,
+cathedral,
+beacon,
+windmill,
+hill,
+mountain,
+headland,
+bridge,
+ford,
+river,
+lake,
+marsh,
+island,
+wood,
+forest,
+chase,
+park-trees,
+park-bare,
+battlefield,
+burghley,
+marginalia,
+sea-creature,
+ship,
+county,
+county-detached,
+hundred,
+glyph-uncertain
+
+Rogue:
+document_id, 3vmdhwy3zjik14
+circle,
+tree
 
 ==================================================
 
@@ -161,72 +499,185 @@ The itinerary of John Leland, part 6 (Wales)
 Controlled:
 admin-borough,
 admin-cantref,
-defence-citygate,
-defence-citywalls
-
-Uncontrolled:
-document_id, sui5bsdm8zb8he
-admin-county,
-Boundary,
-Bridge,
-Brook,
-Cantref,
-castle,
-Castle,
-Church,
-church,
-City Gate,
-cottage,
-county,
-County,
-Cwmwd,
-Cwmwd Commote,
-Deer,
-Direction: East,
-Direction: West,
-Estuary,
-Family,
-Forest,
-Fresh water,
-fresh water,
-Friary,
-Good Corn,
-Good Greese,
-Hill,
-Hillfort,
-House,
-Individuals by name,
-Island,
-Lake,
-lake,
-Landing place,
-Landscape-bog,
-landscape-mountains,
-linesplit,
-Little Wood,
-Manor houses,
-Market Town,
-Mine,
-Monastery,
-Mound,
-Mountain pass,
-Parish,
-parish,
-Priory,
+admin-commote,
+admin-county-historical,
+admin-deanery,
+admin-dicoese,
+admin-hundred,
+admin-lordship,
+admin-parish-historical,
+admin-shire,
+admin-wapentake,
+animals-wild-deer,
+animals-wild-fish,
+animals-wild-goats,
+commerce-fair,
+commerce-market,
+defence-beacon,
+defence-castle,
+defence-gate,
+defence-wall,
+defence-dike,
+defence-hillfort,
+defence-moat,
+farming-animals-cattle,
+farming-animals-geese,
+farming-animals-goats,
+farming-animals-horses,
+farming-animals-pigs,
+farming-animals-sheep,
+farming-animals-rabbits,
+farming-crops-barley,
+farming-crops-corn,
+farming-crops-fallow,
+farming-crops-meadow,
+farming-crops-oats,
+farming-crops-peas,
+farming-crops-rye,
+farming-crops-wheat,
+fishing-eels,
+fishing-trout,
+fishing-trout-red,
+fishing-trout-white,
+hunting-chase,
+hunting-forest,
+hunting-park-deer,
+hunting-park-nodeer,
+industry-energy-peatcutting,
+industry-manufacture-cloth,
+industry-manufacture-foundry,
+industry-manufacture-furnace,
+industry-manufacture-salt,
+industry-manufacture-weaving,
+industry-mining-alum,
+industry-mining-coal,
+industry-mining-copper,
+industry-mining-gold,
+industry-mining-iron,
+industry-mining-lead,
+industry-mining-silver,
+industry-mining-tin,
+industry-processing-fullingmill,
+industry-processing-gristmill,
+industry-processing-limekiln,
+industry-processing-watermill,
+industry-processing-windmill,
+industry-quarry-slate,
+industry-quarry-stone,
+infrastructure-bridge,
+infrastructure-ditch-drainage,
+infrastructure-ferry,
+infrastructure-ford,
+infrastructure-haven,
+infrastructure-highway,
+infrastructure-mountainpass,
+infrastructure-prison,
+infrastructure-well,
+infrastructure-wharf,
+landscape-bog,
+landscape-estuary,
+landscape-hill,
+landscape-island,
+landscape-lake,
+landscape-marsh,
+landscape-mountain,
+landscape-river,
+landscape-river-creek,
+landscape-river-mouth,
+landscape-river-brook,
+landscape-river-rill,
+landscape-sea-strait,
+landscape-soil,
+landscape-valley,
+landscape-wood-coppicing,
+landscape-wood-oak,
+landscape-wood-pollarding,
+landscape-wood-unclassified,
 religion-abbey,
-River,
-river,
-Ryll,
-Sea,
-Settlement,
-Titles,
-Town,
-Valley,
-Village,
-Well,
-Wild guess,
-wood,
-Wood,
-Wood-oak
+religion-cathedral,
+religion-chapel,
+religion-chapelofease,
+religion-church,
+religion-church-collegiate,
+religion-deanery,
+religion-friary,
+religion-monastery,
+religion-nunnery,
+religion-parsonage,
+religion-priory,
+religion-rectory,
+settlement-city,
+settlement-hamlet,
+settlement-haven,
+settlement-house,
+settlement-port,
+settlement-suburb,
+settlement-town,
+settlement-village,
+shoreline-cliffs,
+shoreline-headland,
+shoreline-pebbles,
+shoreline-rocks,
+shoreline-sand,
+unclassified
+
+Rogue:
+document_id, sui5bsdm8zb8he
+Abbey,religion-abbey
+Abbey-cloister,religion-abbey-cloister
+Abbey-frater,religion-abbey-frater
+Abbey-infirmary,religion-abbey-infirmary
+Abbey-outer precinct,religion-abbey-outerprecinct
+admin-county,admin-county-historical
+Boundary,admin-boundary
+Brook,landscape-river-brook
+Castle,defence-castle
+Cemetery,infrastructure-cemetery
+Church,religion-church
+City Gate,defence-gate
+cottage,settlement-cottage
+County,admin-county-historical
+county,admin-county-historical
+crime-thieves,crime
+defence-citygate,defence-gate
+Estuary,landscape-river-mouth
+farming-crop-corn,farming-crops-corn
+farming-crop-pasture,farming-crops-pasture
+farming-crops-fruit,farming-crops-fruit
+Farmstead,settlement-farmstead
+fresh water,resource-water-fresh
+Fresh water,resource-water-fresh
+Hill,landscape-hill
+Hills,landscape-hill
+industry-coppicing (not practiced),landscape-wood-coppicing
+industry-peat cutting,industry-energy-peatcutting
+Industry-tree felling,industry-energy-treefelling
+Island,landscape-island
+Lake,landscape-lake
+lake,landscape-lake
+Landing place,infrastructure-landingplace
+Landscape-bog,landscape-bog
+landscape-hills,landscape-hill
+landscape-mountains,landscape-mountain
+landscape-promontory,landscape-headland
+landscape-stream,landscape-river-stream
+landscape-trees-yew,landscape-wood-yew
+landscape-woods-absence,landscape-wood-absence
+linesplit,
+lndscape-hill,landscape-hill
+Mine,industry-mining
+Monastery,religion-monastery
+Mound,landscape-mound
+Mountain,landscape-mountain
+Pasture,farming-crops-pasture
+Prison,infrastructure-prison
+River,landscape-river
+shoreline-bay,
+shoreline-beach,
+Town,settlement-town
+Valley,landscape-valley
+Village,settlement-village
+wood,landscape-wood-unclassified
+Wood-oak,landscape-wood-oak
 
 ==================================================
