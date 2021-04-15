@@ -35,3 +35,8 @@ county, https://www.wikidata.org/wiki/Q28575
 county-detached, https://www.wikidata.org/wiki/Q28575
 hundred, https://www.wikidata.org/wiki/Q26678366
 glyph-uncertain, https://www.wikidata.org/wiki/Q235536
+tree-ash, https://www.wikidata.org/wiki/Q59772388
+tree-elm, https://www.wikidata.org/wiki/Q59779164
+tree-oak, https://www.wikidata.org/wiki/Q33036816
+tree-yew, https://www.wikidata.org/wiki/Q17038225
+tree, https://www.wikidata.org/wiki/Q10884
