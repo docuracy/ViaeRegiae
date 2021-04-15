@@ -96,6 +96,7 @@ landscape-river-brook
 landscape-river-rill
 landscape-river-stream
 landscape-sea-strait
+landscape-sea-whirlpool
 landscape-soil
 landscape-valley
 landscape-wood-absence
