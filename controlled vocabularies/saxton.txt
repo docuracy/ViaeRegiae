@@ -40,3 +40,4 @@ tree-elm, https://www.wikidata.org/wiki/Q59779164
 tree-oak, https://www.wikidata.org/wiki/Q33036816
 tree-yew, https://www.wikidata.org/wiki/Q17038225
 tree, https://www.wikidata.org/wiki/Q10884
+mine, https://www.wikidata.org/wiki/Q820477
