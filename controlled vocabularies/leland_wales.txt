@@ -39,6 +39,7 @@ farming-crops-pasture
 farming-crops-peas
 farming-crops-rye
 farming-crops-wheat
+fishing
 fishing-eels
 fishing-trout
 fishing-trout-red
@@ -121,6 +122,10 @@ religion-friary
 religion-monastery
 religion-nunnery
 religion-parsonage
+religion-people-canon-black
+religion-people-canon-prebendary
+religion-people-canon-white
+religion-people-monk-barnardine
 religion-priory
 religion-rectory
 settlement-city
@@ -135,6 +140,7 @@ settlement-village
 shoreline-bay
 shoreline-beach
 shoreline-cliffs
+shoreline-dunes
 shoreline-headland
 shoreline-pebbles
 shoreline-rocks
