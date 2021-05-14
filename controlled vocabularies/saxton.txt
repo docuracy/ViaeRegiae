@@ -29,6 +29,7 @@ forest, https://www.wikidata.org/wiki/Q4421
 chase, https://www.wikidata.org/wiki/Q1678262
 park-trees, https://www.wikidata.org/wiki/Q2662247
 park-bare, https://www.wikidata.org/wiki/Q2662247
+heathland, https://www.wikidata.org/wiki/Q27590
 battlefield, https://www.wikidata.org/wiki/Q4895508
 burghley, https://www.wikidata.org/wiki/Q857525
 marginalia, https://www.wikidata.org/wiki/Q1572441
