@@ -10,6 +10,7 @@ tower, https://www.wikidata.org/wiki/Q1408475
 castle, https://www.wikidata.org/wiki/Q23413
 town, https://www.wikidata.org/wiki/Q3957
 cathedral, https://www.wikidata.org/wiki/Q2977
+monument, https://www.wikidata.org/wiki/Q4989906
 beacon, https://www.wikidata.org/wiki/Q17484395
 windmill, https://www.wikidata.org/wiki/Q38720
 hill, https://www.wikidata.org/wiki/Q54050
@@ -17,6 +18,7 @@ mountain, https://www.wikidata.org/wiki/Q8502
 headland, https://www.wikidata.org/wiki/Q191992
 bridge, https://www.wikidata.org/wiki/Q12280
 ford, https://www.wikidata.org/wiki/Q12743
+ferry, https://www.wikidata.org/wiki/Q18984099
 river, https://www.wikidata.org/wiki/Q4022
 lake, https://www.wikidata.org/wiki/Q23397
 marsh, https://www.wikidata.org/wiki/Q30198
