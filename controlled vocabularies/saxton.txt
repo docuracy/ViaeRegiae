@@ -10,6 +10,7 @@ tower, https://www.wikidata.org/wiki/Q1408475
 castle, https://www.wikidata.org/wiki/Q23413
 town, https://www.wikidata.org/wiki/Q3957
 cathedral, https://www.wikidata.org/wiki/Q2977
+monastery, https://www.wikidata.org/wiki/Q44613
 monument, https://www.wikidata.org/wiki/Q4989906
 beacon, https://www.wikidata.org/wiki/Q17484395
 windmill, https://www.wikidata.org/wiki/Q38720
