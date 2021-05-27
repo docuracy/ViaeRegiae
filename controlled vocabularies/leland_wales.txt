@@ -23,6 +23,7 @@ defence-wall
 defence-dike
 defence-hillfort
 defence-moat
+defence-tower
 farming-animals-cattle
 farming-animals-geese
 farming-animals-goats
@@ -31,6 +32,7 @@ farming-animals-pigs
 farming-animals-sheep
 farming-animals-rabbits
 farming-crops-barley
+farming-crops-beans
 farming-crops-corn
 farming-crops-fallow
 farming-crops-meadow
@@ -63,6 +65,7 @@ industry-mining-iron
 industry-mining-lead
 industry-mining-silver
 industry-mining-tin
+industry-processing-fishsalting
 industry-processing-fullingmill
 industry-processing-gristmill
 industry-processing-limekiln
