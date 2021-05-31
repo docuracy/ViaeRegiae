@@ -125,13 +125,12 @@ religion-church
 religion-church-collegiate
 religion-deanery
 religion-friary
+religion-habits
+religion-habits-black
+religion-habits-white
 religion-monastery
 religion-nunnery
 religion-parsonage
-religion-people-canon-black
-religion-people-canon-prebendary
-religion-people-canon-white
-religion-people-monk-barnardine
 religion-priory
 religion-rectory
 settlement-city
