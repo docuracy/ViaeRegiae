@@ -56,121 +56,6 @@ unclear
 
 ==================================================
 
-Saxton: Denbigh, Flint
-
-Controlled:
-battlefield,
-beacon,
-bridge,
-burghley,
-castle,
-cathedral,
-chase,
-county,
-county-detached,
-ferry,
-ford,
-forest,
-glyph-uncertain,
-hamlet,
-hamlet-double,
-headland,
-heathland,
-hill,
-hundred,
-island,
-lake,
-manor-box,
-manor-buildings,
-marginalia,
-marsh,
-mine,
-monastery,
-monument,
-mountain,
-park-bare,
-park-trees,
-river,
-sea-creature,
-ship,
-tower,
-town,
-tree,
-tree-ash,
-tree-elm,
-tree-oak,
-tree-yew,
-village-large,
-village-spike,
-village-spire,
-watermill,
-windmill,
-wood
-
-Rogue:
-document_id, ptw35viuwpwqyq
-r,DELETE
-
-==================================================
-
-Saxton: Northamptonshire, Bedfordshire, Cambridgeshire, Huntingdonshire, Rutland
-
-Controlled:
-battlefield,
-beacon,
-bridge,
-burghley,
-castle,
-cathedral,
-chase,
-county,
-county-detached,
-ferry,
-ford,
-forest,
-glyph-uncertain,
-hamlet,
-hamlet-double,
-headland,
-heathland,
-hill,
-hundred,
-island,
-lake,
-manor-box,
-manor-buildings,
-marginalia,
-marsh,
-mine,
-monastery,
-monument,
-mountain,
-park-bare,
-park-trees,
-river,
-sea-creature,
-ship,
-tower,
-town,
-tree,
-tree-ash,
-tree-elm,
-tree-oak,
-tree-yew,
-village-large,
-village-spike,
-village-spire,
-watermill,
-windmill,
-wood
-
-Rogue:
-document_id, e3mwfadzp7uv5l
-Bridge,bridge
-glyph-none,DELETE
-
-==================================================
-
 Saxton: Cornwall
 
 Controlled:
@@ -225,9 +110,9 @@ wood
 Rogue:
 document_id, gtxgxmtl6vkwio
 confluence,
-county-devon,
-county-outside,
-v
+county-devon,DELETE
+county-outside,DELETE
+v,DELETE
 
 ==================================================
 
@@ -285,10 +170,10 @@ wood
 Rogue:
 document_id, ig8ecr5tex8nqv
 deer,
-essex,
-glyph-circle,
+essex,DELETE
+glyph-circle,DELETE
 palace,
-unknown
+unknown,DELETE
 
 ==================================================
 
@@ -346,20 +231,20 @@ wood
 Rogue:
 document_id, rxxvqbgjjsussd
 chapel,
-circle,
+circle,DELETE
 city,
 confluence,
-double box,
-Ferry,
+double box,DELETE
+Ferry,ferry
 fish,
-glyph-none,
+glyph-none,DELETE
 haven,
 house,
 manor,
 ocean,
-spire,
-uncertain,
-uncoloured
+spire,village-spire
+uncertain,DELETE
+uncoloured,DELETE
 
 ==================================================
 
@@ -416,8 +301,8 @@ wood
 
 Rogue:
 document_id, y6tjzllohyamr0
-c,
-v
+c,DELETE
+v,DELETE
 
 ==================================================
 
@@ -475,14 +360,14 @@ wood
 Rogue:
 document_id, 2smumwdrrqzwev
 confluence,
-Confluence,
-county-hampshire,
-county-hertfordshire,
-county-middlesex,
-county-northamptonshire,
-county-outside,
-county-wiltshire,
-g
+Confluence,confluence
+county-hampshire,DELETE
+county-hertfordshire,DELETE
+county-middlesex,DELETE
+county-northamptonshire,DELETE
+county-outside,DELETE
+county-wiltshire,DELETE
+g,DELETE
 
 ==================================================
 
@@ -647,6 +532,7 @@ Rogue:
 document_id, sui5bsdm8zb8he
 admin-l,
 commerce-merchants,
+farming-crops-fruit,
 industry-manufacture,
 landscape-bay,
 landscape-dunes,
@@ -708,7 +594,7 @@ wood
 
 Rogue:
 document_id, bwgsrmi2tozrsn
-circle
+circle,DELETE
 
 ==================================================
 
@@ -768,12 +654,12 @@ document_id, abtemqrd29xpjt
 abbey,
 circle,
 glyph-circle,
-glyph-none,
-landing place,
+glyph-none,DELETE
+landing place,landing-place
 park,
 village,
 village-castellated,
-w
+w,DELETE
 
 ==================================================
 
@@ -1001,9 +887,9 @@ wood
 Rogue:
 document_id, cwdvby6py0ezxg
 confluence,
-county-outside,
-h,
-v
+county-outside,DELETE
+h,DELETE
+v,DELETE
 
 ==================================================
 
@@ -1060,8 +946,8 @@ wood
 
 Rogue:
 document_id, 3vmdhwy3zjik14
-circle,
-glyph-none
+circle,glyph-circle
+glyph-none,DELETE
 
 ==================================================
 
@@ -1118,7 +1004,7 @@ wood
 
 Rogue:
 document_id, ktuqy6hknw25yb
-r
+r,DELETE
 
 ==================================================
 
@@ -1232,8 +1118,8 @@ wood
 
 Rogue:
 document_id, ybpx6jyi24fjop
-glyph-none,
-r
+glyph-none,DELETE
+r,DELETE
 
 ==================================================
 
@@ -1290,7 +1176,7 @@ wood
 
 Rogue:
 document_id, 632xhcroayugdb
-glyph-none
+glyph-none,DELETE
 
 ==================================================
 
@@ -1404,9 +1290,9 @@ wood
 
 Rogue:
 document_id, eo14w2amidotgo
-B,
-glyph-none,
-r
+B,DELETE
+glyph-none,DELETE
+r,DELETE
 
 ==================================================
 
@@ -1520,9 +1406,9 @@ wood
 
 Rogue:
 document_id, b7txqa7kujbd68
-conflue,
+conflue,confluence
 confluence,
-spire
+spire,village-spire
 
 ==================================================
 
@@ -1579,18 +1465,18 @@ wood
 
 Rogue:
 document_id, odehregoehuipy
-Belston,
-cambridgeshire,
+Belston,DELETE
+cambridgeshire,DELETE
 confluence,
-county-essex,
-county-norfolk,
-county-outside,
-county-outside-cambridgeshire,
-county-outside-essex,
-essex,
-glyph-uncertain-settlement,
-norfolk,
-v
+county-essex,DELETE
+county-norfolk,DELETE
+county-outside,DELETE
+county-outside-cambridgeshire,DELETE
+county-outside-essex,DELETE
+essex,DELETE
+glyph-uncertain-settlement,DELETE
+norfolk,DELETE
+v,DELETE
 
 ==================================================
 
@@ -1647,7 +1533,7 @@ wood
 
 Rogue:
 document_id, kd6jsfilzlbyy0
-glyph-circle
+glyph-circle,DELETE
 
 ==================================================
 
@@ -1704,7 +1590,7 @@ wood
 
 Rogue:
 document_id, kzgdfu5psmdrux
-suffolk
+suffolk,DELETE
 
 ==================================================
 
@@ -1761,19 +1647,19 @@ wood
 
 Rogue:
 document_id, l8k4texxo0pjiw
-??,
-cambridgeshire,
+??,DELETE
+cambridgeshire,DELETE
 confluence,
-for discussion,
-hertfordshire,
-kent,
+for discussion,DELETE
+hertfordshire,DELETE
+kent,DELETE
 park,
-Probable,
-spire,
-suffolk,
-Town,
-v,
-Very probable
+Probable,DELETE
+spire,village-spire
+suffolk,DELETE
+Town,town
+v,DELETE
+Very probable,DELETE
 
 ==================================================
 
@@ -1887,8 +1773,8 @@ wood
 
 Rogue:
 document_id, nnclx5ynmz3zvy
-r,
-to
+r,DELETE
+to,DELETE
 
 ==================================================
 
@@ -2002,7 +1888,7 @@ wood
 
 Rogue:
 document_id, rarqzg176hodk2
-h
+h,DELETE
 
 ==================================================
 
@@ -2059,6 +1945,6 @@ wood
 
 Rogue:
 document_id, z847cuzagwumjy
-r
+r,DELETE
 
 ==================================================
