@@ -15,6 +15,7 @@ animals-wild-fish,https://www.wikidata.org/wiki/Q152
 animals-wild-goats,https://www.wikidata.org/wiki/Q2934
 commerce-fair,https://www.wikidata.org/wiki/Q288514
 commerce-market,https://www.wikidata.org/wiki/Q132510
+commerce-merchants,https://www.wikidata.org/wiki/Q3704253
 crime,https://www.wikidata.org/wiki/Q83267
 defence-beacon,https://www.wikidata.org/wiki/Q17484395
 defence-castle,https://www.wikidata.org/wiki/Q23413
@@ -52,6 +53,7 @@ hunting-park-deer,https://www.wikidata.org/wiki/Q2662247
 hunting-park-nodeer,https://www.wikidata.org/wiki/Q2662247
 industry-energy-peatcutting,https://www.wikidata.org/wiki/Q589019
 industry-energy-treefelling,https://www.wikidata.org/wiki/Q5442467
+industry-manufacture,https://www.wikidata.org/wiki/Q187939
 industry-manufacture-cloth,https://www.wikidata.org/wiki/Q1505660
 industry-manufacture-foundry,https://www.wikidata.org/wiki/Q13883136
 industry-manufacture-furnace,https://www.wikidata.org/wiki/Q96384666
@@ -87,7 +89,9 @@ infrastructure-school-dissentingacademy,https://www.wikidata.org/wiki/Q5282763
 infrastructure-school-freegrammar,https://www.wikidata.org/wiki/Q5499861
 infrastructure-well,https://www.wikidata.org/wiki/Q43483
 infrastructure-wharf,https://www.wikidata.org/wiki/Q828909
+landscape-bay,https://www.wikidata.org/wiki/Q39594
 landscape-bog,https://www.wikidata.org/wiki/Q1681353
+landscape-dunes,https://www.wikidata.org/wiki/Q25391
 landscape-estuary,https://www.wikidata.org/wiki/Q47053
 landscape-headland,https://www.wikidata.org/wiki/Q191992
 landscape-hill,https://www.wikidata.org/wiki/Q54050
@@ -102,6 +106,7 @@ landscape-river-mouth,https://www.wikidata.org/wiki/Q1233637
 landscape-river-brook,https://www.wikidata.org/wiki/Q63565252
 landscape-river-rill,https://www.wikidata.org/wiki/Q2153116
 landscape-river-stream,https://www.wikidata.org/wiki/Q355304
+landscape-rock,https://www.wikidata.org/wiki/Q1404150
 landscape-sea-strait,https://www.wikidata.org/wiki/Q37901
 landscape-sea-whirlpool,https://www.wikidata.org/wiki/Q607538
 landscape-soil,https://www.wikidata.org/wiki/Q36133
