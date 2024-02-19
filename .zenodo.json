@@ -1,10 +1,5 @@
 {
   "title": "Viae Regiae Datacollection",
-  "communities": [
-    {
-      "identifier": "gis"
-    }
-  ],
   "subjects": [
     {
       "term": "gazetteer",
@@ -78,9 +73,5 @@
   ],
   "license": "CC-BY-4.0",
   "upload_type": "dataset",
-  "description": "<p>These geolocated datasets derive from annotations of
-  Christopher Saxton's County Maps of England & Wales,
-  annotations of published volumes of John Leland's
-  Itineraries in Wales, and annotations of Wenceslaus
-  Hollar's vignettes intended for publication in Britannia.</p><p>Please see the <a href='https://github.com/docuracy/ViaeRegiae' target='_blank'>GitHub repository</a> for details of the sources used and visualisation of their geographic scope.</p>"
+  "description": "<p>These geolocated datasets derive from annotations of Christopher Saxton's County Maps of England & Wales, annotations of published volumes of John Leland's Itineraries in Wales, and annotations of Wenceslaus Hollar's vignettes intended for publication in Britannia.</p><p>Please see the <a href='https://github.com/docuracy/ViaeRegiae' target='_blank'>GitHub repository</a> for details of the sources used and visualisation of their geographic scope.</p>"
 }
