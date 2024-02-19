@@ -3,6 +3,10 @@
 
 *This project was initiated early in 2021 by Stephen Gadd and Colin Greenstreet, and is currently inactive.*
 
+## Blog Post
+
+Viae Regiae volunteer Kathryn Bullen wrote about the origins of the word 'road'. [[*PDF*]](https://docuracy.github.io/ViaeRegiae/data/Kathryn_Bullen_2021.pdf)
+
 ## Dataset Visualisation
 
 The datasets listed below can be explored through an interactive [Peripleo map interface](https://docuracy.github.io/ViaeRegiae/#/7.00/-2.5934/52.1213/mode=points+facet=dataset).
