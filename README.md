@@ -1,8 +1,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10679173.svg)](https://doi.org/10.5281/zenodo.10679173)
 # Viæ Regiæ
-## A public history project, 'Mapping the Transport Network of England & Wales, 1530-1680'.
+## A public history project, 'Mapping the Transport Network of Early Modern England & Wales'.
 
-*This project was initiated early in 2021 by Stephen Gadd and Colin Greenstreet, and is currently inactive. The project's primary outputs are available through the links given below.*
+*This project was initiated early in 2021 by Stephen Gadd and Colin Greenstreet, and is currently inactive. The project's primary outputs to date are available through the links given below.*
 
 ## Blog Post
 
@@ -14,7 +14,8 @@ The datasets listed below can be explored through an interactive [Peripleo map i
 
 ## Downloadable datasets
 
-These datasets were produced by the project's volunteers, using [*Recogito*](https://recogito.pelagios.org/) to annotate and geolocate sixteenth- and seventeenth-century source material.
+These datasets were produced by the project's volunteers, using [*Recogito*](https://recogito.pelagios.org/) to annotate and geolocate sixteenth- and seventeenth-century source material. 
+They are Linked Open Data in [Linked Places Format](https://github.com/LinkedPasts/linked-places-format), which is an extension of GeoJSON that will load in most GIS applications.
 
 ### Christopher Saxton's Place Names of England & Wales, 1574-1578
 
