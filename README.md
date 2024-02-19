@@ -1,7 +1,7 @@
 # Viæ Regiæ
 ## A public history project, 'Mapping the Transport Network of England & Wales, 1530-1680'.
 
-*This project was initiated early in 2021, and is currently inactive. A snapshot of the project's wiki-style web site has been preserved here for reference, but has limited functionality.*
+*This project was initiated early in 2021 by Stephen Gadd and Colin Greenstreet, and is currently inactive. A snapshot of the project's wiki-style web site has been preserved here for reference, but has limited functionality.*
 
 ## Dataset Visualisation
 
