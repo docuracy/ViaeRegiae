@@ -1,7 +1,7 @@
 # Viæ Regiæ
 ## A public history project, 'Mapping the Transport Network of England & Wales, 1530-1680'.
 
-*This project was initiated early in 2021 by Stephen Gadd and Colin Greenstreet, and is currently inactive. A snapshot of the project's wiki-style web site has been preserved here for reference, but has limited functionality.*
+*This project was initiated early in 2021 by Stephen Gadd and Colin Greenstreet, and is currently inactive.*
 
 ## Dataset Visualisation
 
@@ -9,11 +9,11 @@ The datasets listed below can be explored through an interactive [Peripleo map i
 
 ## Downloadable datasets
 
-These datasets were produced by the project's volunteers, using [*Recogito*](https://recogito.pelagios.org/) to annotate and geolocate sixteenth-century source material.
+These datasets were produced by the project's volunteers, using [*Recogito*](https://recogito.pelagios.org/) to annotate and geolocate sixteenth- and seventeenth-century source material.
 
 ### Christopher Saxton's Place Names of England & Wales, 1574-1578
 
-Geolocated annotations of Christopher Saxton's County Maps of England & Wales. [*Download*](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/saxton.geojson).
+Geolocated annotations of Christopher Saxton's County Maps of England & Wales. [[*Download*]](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/saxton.geojson).
 
 #### Volunteer Team
 - David Cant (leader)
@@ -30,7 +30,7 @@ Geolocated annotations of Christopher Saxton's County Maps of England & Wales. [
 
 ### John Leland in Wales, 1530-1540
 
-Geolocated annotations of published volumes of John Leland's Itineraries in Wales. [*Download*](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/leland.geojson).
+Geolocated annotations of published volumes of John Leland's Itineraries in Wales. [[*Download*]](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/leland.geojson).
 
 #### Volunteer Team
 - Stuart Bain (leader)
@@ -42,3 +42,12 @@ Geolocated annotations of published volumes of John Leland's Itineraries in Wale
 - Colin Greenstreet
 - Adam Chapman (advisor)
 - Jason Evans (advisor)
+
+### Wenceslaus Hollar, Topographical Depictions, 1660
+
+Geolocated annotations of Wenceslaus Hollar's vignettes intended for publication in *Britannia*. This dataset and its source are featured on the web site of the British Library [here](https://britishlibrary.github.io/locating-a-national-collection/Hollar_1660.html). [[*Download*]](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/hollar.geojson).
+
+#### Volunteer Team
+- Tamsin Braisher
+- David Cant
+- Stephen Gadd
