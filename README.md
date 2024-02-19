@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10679173.svg)](https://doi.org/10.5281/zenodo.10679173)
 # Viæ Regiæ
 ## A public history project, 'Mapping the Transport Network of England & Wales, 1530-1680'.
 
