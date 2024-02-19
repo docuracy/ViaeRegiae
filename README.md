@@ -15,7 +15,30 @@ These datasets were produced by the project's volunteers, using [*Recogito*](htt
 
 Geolocated annotations of Christopher Saxton's County Maps of England & Wales. [*Download*](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/saxton.geojson).
 
+#### Volunteer Team
+- David Cant (leader)
+- Stuart Bain
+- Michael Bennett
+- Tamsin Braisher
+- Kathryn Bullen
+- Pam Fisher
+- Stephen Gadd
+- Michael Hall
+- James Heald
+- Katy Thornton
+- Kirsty Wright
+
 ### John Leland in Wales, 1530-1540
 
 Geolocated annotations of published volumes of John Leland's Itineraries in Wales. [*Download*](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/leland.geojson).
 
+#### Volunteer Team
+- Stuart Bain (leader)
+- Tamsin Braisher
+- Nick Cooke
+- David Elis-Williams
+- Sylvia Fowles
+- Stephen Gadd
+- Colin Greenstreet
+- Adam Chapman (advisor)
+- Jason Evans (advisor)
