@@ -1,7 +1,7 @@
 # Viæ Regiæ
 ## A public history project, 'Mapping the Transport Network of England & Wales, 1530-1680'.
 
-*This project was initiated early in 2021 by Stephen Gadd and Colin Greenstreet, and is currently inactive.*
+*This project was initiated early in 2021 by Stephen Gadd and Colin Greenstreet, and is currently inactive. The project's primary outputs are available through the links given below.*
 
 ## Blog Post
 
@@ -17,7 +17,7 @@ These datasets were produced by the project's volunteers, using [*Recogito*](htt
 
 ### Christopher Saxton's Place Names of England & Wales, 1574-1578
 
-Geolocated annotations of Christopher Saxton's County Maps of England & Wales. [[*Download*]](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/saxton.geojson).
+Geolocated annotations of Christopher Saxton's County Maps of England & Wales, using [controlled vocabulary](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/controlled%20vocabularies/saxton.txt). [[*Download*]](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/saxton.geojson).
 
 #### Volunteer Team
 - David Cant (leader)
@@ -34,7 +34,7 @@ Geolocated annotations of Christopher Saxton's County Maps of England & Wales. [
 
 ### John Leland in Wales, 1530-1540
 
-Geolocated annotations of published volumes of John Leland's Itineraries in Wales. [[*Download*]](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/leland.geojson).
+Geolocated annotations of published volumes of John Leland's Itineraries in Wales, using [controlled vocabulary](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/controlled%20vocabularies/leland.md). [[*Download*]](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/leland.geojson).
 
 #### Volunteer Team
 - Stuart Bain (leader)
