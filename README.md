@@ -17,7 +17,7 @@ These datasets were produced by the project's volunteers, using [*Recogito*](htt
 
 ### Christopher Saxton's Place Names of England & Wales, 1574-1578
 
-Geolocated annotations of Christopher Saxton's County Maps of England & Wales. [[*Download*]](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/saxton.geojson).
+Geolocated annotations of Christopher Saxton's County Maps of England & Wales, using [controlled vocabulary](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/controlled%20vocabularies/saxton.txt). [[*Download*]](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/saxton.geojson).
 
 #### Volunteer Team
 - David Cant (leader)
