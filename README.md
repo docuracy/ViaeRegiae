@@ -27,6 +27,7 @@ Geolocated annotations of Christopher Saxton's County Maps of England & Wales, u
 - Michael Bennett
 - Tamsin Braisher
 - Kathryn Bullen
+- David Elis-Williams
 - Pam Fisher
 - Stephen Gadd
 - Michael Hall
