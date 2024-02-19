@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+title: Viae Regiae Datacollection
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Stephen James
+    family-names: Gadd
+    orcid: 'https://orcid.org/0000-0003-3060-0181'
+  - given-names: Colin
+    family-names: Greenstreet
+  - given-names: David
+    family-names: Cant
+  - given-names: Stuart
+    family-names: Bain
+  - given-names: Michael
+    family-names: Bennett
+  - given-names: Tamsin
+    family-names: Braisher
+  - given-names: Kathryn
+    family-names: Bullen
+  - given-names: Nick
+    family-names: Cooke
+  - given-names: David
+    family-names: Elis-Williams
+  - given-names: Pam
+    family-names: Fisher
+  - given-names: Sylvia
+    family-names: Fowles
+  - given-names: Michael
+    family-names: Hall
+  - given-names: James
+    family-names: Heald
+  - given-names: Katy
+    family-names: Thornton
+  - given-names: Kirsty
+    family-names: Wright
+repository-code: 'https://github.com/docuracy/ViaeRegiae'
+abstract: >-
+  These geolocated datasets derive from annotations of
+  Christopher Saxton's County Maps of England & Wales,
+  annotations of published volumes of John Leland's
+  Itineraries in Wales, and annotations of Wenceslaus
+  Hollar's vignettes intended for publication in Britannia.
+keywords:
+  - historical
+  - GIS
+  - gazetteer
+  - england
+  - wales
+  - place-names
+  - early modern
+  - map
+license: CC-BY-4.0

@@ -1,0 +1,86 @@
+{
+  "title": "Viae Regiae Datacollection",
+  "communities": [
+    {
+      "identifier": "gis"
+    }
+  ],
+  "subjects": [
+    {
+      "term": "gazetteer",
+      "scheme": "url",
+      "identifier": "https://www.wikidata.org/wiki/Q1006160"
+    },
+    {
+      "term": "Historical GIS",
+      "scheme": "url",
+      "identifier": "https://www.wikidata.org/wiki/Q57243082"
+    }
+  ],
+  "keywords": [
+    "GIS",
+    "historical",
+    "gazetteer",
+    "england",
+    "wales",
+    "place-names",
+    "early modern",
+    "map"
+  ],
+  "creators": [
+    {
+      "orcid": "0000-0003-3060-0181",
+      "affiliation": "Docuracy Ltd",
+      "name": "Gadd, Stephen James"
+    },
+    {
+        "name": "Greenstreet, Colin"
+    },
+    {
+        "name": "Cant, David"
+    },
+    {
+        "name": "Bain, Stuart"
+    },
+    {
+        "name": "Bennett, Michael"
+    },
+    {
+        "name": "Braisher, Tamsin"
+    },
+    {
+        "name": "Bullen, Kathryn"
+    },
+    {
+        "name": "Cooke, Nick"
+    },
+    {
+        "name": "Elis-Williams, David"
+    },
+    {
+        "name": "Fisher, Pam"
+    },
+    {
+        "name": "Fowles, Sylvia"
+    },
+    {
+        "name": "Hall, Michael"
+    },
+    {
+        "name": "Heald, James"
+    },
+    {
+        "name": "Thornton, Katy"
+    },
+    {
+        "name": "Wright, Kirsty"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "upload_type": "dataset",
+  "description": "<p>These geolocated datasets derive from annotations of
+  Christopher Saxton's County Maps of England & Wales,
+  annotations of published volumes of John Leland's
+  Itineraries in Wales, and annotations of Wenceslaus
+  Hollar's vignettes intended for publication in Britannia.</p><p>Please see the <a href='https://github.com/docuracy/ViaeRegiae' target='_blank'>GitHub repository</a> for details of the sources used and visualisation of their geographic scope.</p>"
+}
