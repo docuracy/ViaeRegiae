@@ -64,13 +64,13 @@
   ],
   "data": [
     {
-      "name": "Recogito Output",
+      "name": "Saxton's Place Names, 1574-1578",
       "format": "LINKED_PLACES",
       "src": "./data/saxton.geojson",
       "attribution":"Saxton Tagging © <a href=\"https://github.com/docuracy/ViaeRegiae\" target=\"_blank\"><i>Viae Regiae</i> Contributors</a>"
     },
     {
-      "name": "Recogito Output",
+      "name": "Leland in Wales, 1530-1540",
       "format": "LINKED_PLACES",
       "src": "./data/leland.geojson",
       "attribution":"Leland Wales Tagging © <a href=\"https://github.com/docuracy/ViaeRegiae\" target=\"_blank\"><i>Viae Regiae</i> Contributors</a>"
@@ -79,5 +79,6 @@
   "facets":[
   	  "dataset",
       "type"
-  ]
+  ],
+  "welcome_message": "viae_regiae.md"
 }
