@@ -34,7 +34,7 @@ Geolocated annotations of Christopher Saxton's County Maps of England & Wales. [
 
 ### John Leland in Wales, 1530-1540
 
-Geolocated annotations of published volumes of John Leland's Itineraries in Wales. [[*Download*]](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/leland.geojson).
+Geolocated annotations of published volumes of John Leland's Itineraries in Wales, using [controlled vocabulary](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/controlled%20vocabularies/leland.md). [[*Download*]](https://github.com/docuracy/ViaeRegiae/blob/main/docs/data/leland.geojson).
 
 #### Volunteer Team
 - Stuart Bain (leader)
